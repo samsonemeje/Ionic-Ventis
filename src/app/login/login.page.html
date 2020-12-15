@@ -1,65 +1,60 @@
-<ion-app>
-  <ion-content>
-    <ion-grid>
-      <ion-row>
-        <ion-col size-md="6" offset-md="3" size-sm="6" offset-sm="3">
-          <ion-card class="ion-margin-start ion-margin-end ion-margin-bottom">
-            <div class="ion-margin-vertical ion-padding brand-img">
-              <img
-                width="60px"
-                height="60px"
-                src="./assets/ventis_icon_gradient_rgb.webp"
-                alt="ventis-logo"
-              />
-              <ion-card-subtitle
-                class="ion-text-uppercase ion-padding-top ion-padding-bottom"
-                >ventis</ion-card-subtitle
-              >
+<ion-content style="--background: #f3f4f6">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3" size-sm="6" offset-sm="3">
+        <ion-card class="ion-margin-start ion-margin-end ion-margin-bottom">
+          <div class="ion-margin-vertical ion-padding brand-img">
+            <img
+              width="60px"
+              height="60px"
+              src="./assets/ventis_icon_gradient_rgb.webp"
+              alt="ventis-logo"
+            />
+            <ion-card-subtitle
+              class="ion-text-uppercase ion-padding-top ion-padding-bottom"
+              >ventis</ion-card-subtitle
+            >
+          </div>
+
+          <ion-item-group class="item-group">
+            <ion-item lines="none" class="ion-margin-bottom">
+              <fieldset class="ion-padding-start">
+                <legend>E-mail</legend>
+                <ion-icon name="person"></ion-icon>
+                <ion-input
+                  type="text"
+                  placeholder="contact@ventis-inc.com"
+                ></ion-input>
+              </fieldset>
+            </ion-item>
+
+            <ion-item lines="none" class="ion-margin-bottom">
+              <fieldset class="ion-padding-start ion-padding-end">
+                <ion-icon name="lock-closed"></ion-icon>
+                <ion-input type="password" placeholder="Password"></ion-input>
+                <ion-icon class="custom-eye" src="./assets/eye.svg"></ion-icon>
+              </fieldset>
+            </ion-item>
+
+            <ion-item lines="none" class="rem-password ion-margin-bottom">
+              <ion-checkbox mode="md"></ion-checkbox>
+              <ion-label>Remember me</ion-label>
+              <a href="#">forgot password?</a>
+            </ion-item>
+
+            <ion-button
+              class="ion-margin-bottom ion-padding-start ion-padding-end"
+              router-link="/recommended"
+              expand="block"
+              color="primary"
+              >LOGIN</ion-button
+            >
+            <div class="create-account ion-margin-bottom">
+              <a href="#">create account</a>
             </div>
-
-            <ion-item-group class="item-group">
-              <ion-item lines="none" class="ion-margin-bottom">
-                <fieldset class="ion-padding-start">
-                  <legend>E-mail</legend>
-                  <ion-icon name="person"></ion-icon>
-                  <ion-input
-                    type="text"
-                    placeholder="contact@ventis-inc.com"
-                  ></ion-input>
-                </fieldset>
-              </ion-item>
-
-              <ion-item lines="none" class="ion-margin-bottom">
-                <fieldset class="ion-padding-start ion-padding-end">
-                  <ion-icon name="lock-closed"></ion-icon>
-                  <ion-input type="password" placeholder="Password"></ion-input>
-                  <ion-icon
-                    class="custom-eye"
-                    src="./assets/eye.svg"
-                  ></ion-icon>
-                </fieldset>
-              </ion-item>
-
-              <ion-item lines="none" class="rem-password ion-margin-bottom">
-                <ion-checkbox mode="md"></ion-checkbox>
-                <ion-label class="ion-text-sm">Remember me</ion-label>
-                <a href="#">forgot password?</a>
-              </ion-item>
-
-              <ion-button
-                class="ion-margin-bottom ion-padding-start ion-padding-end"
-                router-link="/recommended"
-                expand="block"
-                color="primary"
-                >LOGIN</ion-button
-              >
-              <div class="create-account ion-margin-bottom">
-                <a href="#">create account</a>
-              </div>
-            </ion-item-group>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
-</ion-app>
+          </ion-item-group>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

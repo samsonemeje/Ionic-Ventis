@@ -1,3 +1,4 @@
+/* colors */
 $fieldset-border: #d7d8da;
 $lock-fill: #676767;
 $link-color: #666666;
@@ -26,6 +27,7 @@ ion-card {
 
     .ion-padding-start legend {
       margin-right: 5px;
+      font-size: 0.7em;
     }
   }
 
@@ -35,12 +37,18 @@ ion-card {
     margin-right: 4px;
   }
 
+  ion-input {
+    --placeholder-color: #c0c0c0;
+    --placeholder-opacity: 1;
+    font-size: 0.7em;
+  }
+
   .custom-eye {
     fill: $lock-fill;
   }
 
-  .ion-button {
-    border-radius: 0.7em;
+  ion-button {
+    letter-spacing: 2px;
   }
 
   .ion-text-uppercase {
@@ -51,7 +59,7 @@ ion-card {
 
   .rem-password ion-label {
     color: $link-color;
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-left: 4px;
   }
 
@@ -60,6 +68,12 @@ ion-card {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.7em;
+    font-weight: bold;
+
+    &:hover {
+      color: $primary;
+      transition: 0.5s ease-in-out;
+    }
   }
 
   .create-account {
@@ -70,6 +84,9 @@ ion-card {
       color: $primary;
       text-transform: uppercase;
       text-decoration: none;
+      &:hover {
+        color: $link-color;
+      }
     }
   }
 }
