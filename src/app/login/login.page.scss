@@ -1,0 +1,75 @@
+$fieldset-border: #d7d8da;
+$lock-fill: #676767;
+$link-color: #666666;
+$primary: #233a88;
+
+ion-card {
+  border-radius: 0.5em;
+  margin-top: 3em;
+
+  .brand-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-group {
+    fieldset {
+      border-radius: 3px;
+      border: 1px solid $fieldset-border;
+      min-width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .ion-padding-start legend {
+      margin-right: 5px;
+    }
+  }
+
+  ion-icon {
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 4px;
+  }
+
+  .custom-eye {
+    fill: $lock-fill;
+  }
+
+  .ion-button {
+    border-radius: 0.7em;
+  }
+
+  .ion-text-uppercase {
+    font-weight: 800;
+    font-size: 1em;
+    color: $primary;
+  }
+
+  .rem-password ion-label {
+    color: $link-color;
+    font-size: 0.8em;
+    margin-left: 4px;
+  }
+
+  .rem-password a {
+    color: $link-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7em;
+  }
+
+  .create-account {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2.9em;
+    & a {
+      color: $primary;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
