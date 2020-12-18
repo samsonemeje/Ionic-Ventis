@@ -1,86 +1,134 @@
-.custom {
-  border: 1px solid red;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-radius: 30px;
+$link-color: #bebebe;
+$primary: #233a88;
+$grey-shade: #7d7d7d;
+$white: #fff;
+$elipsis: #acacac;
+$recom: #909090;
+
+.input-container {
+	// border: 1px solid $link-color;
+	display: flex;
+	align-items: center;
+	-moz-box-shadow: 0px 3px 8px $link-color;
+	-webkit-box-shadow: 0px 3px 8px $link-color;
+	box-shadow: 0px 3px 8px $link-color;
+	border-radius: 35px;
 }
 
-ion-tab-bar {
-  border-radius: 2px solid red;
-}
-
-.test {
-  border: 2px solid gold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.see {
-  border: 2px solid chartreuse;
-  // height: 350px;
-}
-
-.wetin {
-  border: 2px solid maroon;
-  // display: flex;
-  overflow-x: scroll;
-  // height: 250px;
-}
-
-.behave {
-  display: flex;
-}
-
-.mk-box {
-  border: 2px solid darkblue;
-  width: 50%;
-}
-
-.mk-box2 {
-  border: 2px solid darkblue;
-  width: 100%;
-}
-
-.arrange {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid gold;
-}
-
-.arrange2 {
-  display: flex;
-  // border: 2px solid red;
-  align-items: center;
-}
-
-.ment {
-  width: 60px;
-  height: 40px;
-
-  & ion-icon {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.shegee {
-  border: 2px solid red;
-}
-
-.legoo {
-  // border: 2px solid teal;
-  display: flex;
-  justify-content: space-evenly;
-  a {
-    border-bottom: 2px solid blue;
-    text-decoration: none;
-  }
+.nav-options {
+	display: flex;
+	justify-content: space-evenly;
+	a {
+		text-decoration: none;
+		color: $link-color;
+		padding-bottom: 9px;
+		&:nth-child(1) {
+			border-bottom: 2px solid $primary;
+			color: $primary;
+			font-weight: 500;
+		}
+	}
 }
 
 hr {
-  background-color: #f3f4f6;
-  height: 10px;
+	background-color: $link-color;
+	height: 10px;
+}
+
+.recom {
+	color: $primary;
+	font-size: 0.7em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 12px solid purple;
+	& h3 {
+		font-weight: 700;
+	}
+	ion-icon {
+		width: 25px;
+		height: 25px;
+		color: $elipsis;
+	}
+	& :hover {
+		color: $primary;
+	}
+}
+
+.ventis {
+	font-size: 1.7em;
+	color: $recom;
+}
+
+.gallery-box {
+	border: 12px solid red;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+}
+
+.pic {
+	// height: 370px;
+	-moz-box-shadow: 0px 3px 8px $link-color;
+	-webkit-box-shadow: 0px 3px 8px $link-color;
+	box-shadow: 0px 3px 8px $link-color;
+	border-top: 1px solid $elipsis;
+	border-left: 1px solid $elipsis;
+}
+
+.profile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.fit {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	& .avatar-box {
+		// width: 50px;
+		// height: 50px;
+		background: url('/assets/person-circle.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	& .delete {
+		font-size: 1.7em;
+	}
+}
+
+.move {
+	height: 290px;
+}
+
+.fifty-vertical-one {
+	height: 50%;
+	display: flex;
+
+	.mkbox {
+		border-left: 1px solid $white;
+	}
+
+	& div img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.fifty-vertical-two {
+	border-top: 1px solid $white;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& .person {
+		color: $white;
+		font-size: 1em;
+	}
 }

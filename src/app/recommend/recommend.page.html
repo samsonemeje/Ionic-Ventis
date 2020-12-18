@@ -1,124 +1,349 @@
-<ion-card>
-  <ion-header class="ion-padding-top">
-    <ion-toolbar>
-      <ion-grid>
-        <ion-row>
-          <ion-col
-            class="custom"
-            size-md="8"
-            offset-md="2"
-            size-sm="8"
-            offset-sm="4"
-            size-xs="10"
-            offset-xs="1"
-            ><ion-icon name="location"></ion-icon>
-            <ion-input type="search" placeholder="Search here..."> </ion-input>
-            <ion-icon name="mic"></ion-icon>
-            <ion-icon name="person-circle"></ion-icon>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+<ion-app>
+	<!-- header begins here -->
+	<ion-header>
+		<ion-toolbar class="ion-margin-top ion-padding-start ion-padding-end">
+			<ion-grid>
+				<ion-row>
+					<ion-col
+						class="input-container ion-margin-top"
+						size-md="8"
+						offset-md="2"
+						size-sm="10"
+						offset-sm="1"
+						size-xs="10"
+						offset-xs="1"
+						><ion-icon
+							class="ion-margin-start ion-margin-end"
+							name="location"
+						></ion-icon>
+						<ion-input type="search" placeholder="Search here..."> </ion-input>
+						<ion-icon name="mic"></ion-icon>
+						<ion-icon
+							class="ion-margin-start ion-margin-end"
+							name="person-circle"
+						></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 
-      <div class="legoo ion-margin-start ion-margin-end ion-margin-top">
-        <a class="ion-padding-bottom" href="#">For you</a>
-        <a class="ion-padding-bottom" href="#">Notifications</a>
-        <a class="ion-padding-bottom" href="#">Messages</a>
-      </div>
+			<div
+				class="nav-options ion-margin-start ion-margin-end ion-margin-top ion-padding-top"
+			>
+				<a href="#">For you</a>
+				<a href="#">Notifications</a>
+				<a href="#">Messages</a>
+			</div>
+		</ion-toolbar>
+	</ion-header>
+	<hr />
+	<!-- header ends here -->
 
-      <!-- tabs end -->
-    </ion-toolbar>
-  </ion-header>
-  <hr />
+	<ion-content class="ion-padding">
+		<ion-card-header>
+			<div class="recom ion-margin-bottom">
+				<h3 class="ion-text-uppercase">recommended</h3>
+				<ion-icon name="ellipsis-vertical"></ion-icon>
+			</div>
+			<h4 class="ventis ion-margin-bottom">Ventis recommendations</h4>
+		</ion-card-header>
 
-  <!-- <ion-col size-lg="8" offset-lg="2" size-md="12
-  <!-- paste here -->
-  <ion-card-content class="ion-margin-top">
-    <ion-card-header class="test">
-      <h2 class="ion-text-uppercase">recommended</h2>
-      <ion-icon name="ellipsis-vertical"></ion-icon>
-    </ion-card-header>
-    <ion-card-subtitle>Ventis recommendation</ion-card-subtitle>
+		<div>
+			<ion-grid
+				><ion-row class="gallery-box ion-nowrap ion-margin-bottom">
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div
+								class="profile ion-margin-start ion-margin-top ion-margin-end ion-margin-bottom"
+							>
+								<div class="fit">
+									<ion-avatar class="avatar-box"> </ion-avatar>
+									<ion-label class="ion-margin-start">Person X</ion-label>
+								</div>
+								<ion-icon class="delete" name="close"></ion-icon>
+							</div>
+							<div class="move">
+								<div class="fifty-vertical-one">
+									<div>
+										<img src="../assets/home1.jpg" alt="" />
+									</div>
+									<div class="mkbox">
+										<img src="../assets/home2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="button ion-margin-top ion-margin-bottom">
+								<ion-button shape="round">
+									<ion-icon
+										class="person ion-margin-end"
+										name="person-add"
+									></ion-icon
+									>Follow
+								</ion-button>
+							</div>
+						</ion-card>
+					</ion-col>
 
-    <ion-grid
-      ><ion-row class="wetin ion-nowrap">
-        <ion-col size="12" size-lg="5" size-sm="7" size-xs="8"
-          ><ion-card class="ion-margin-end see"
-            ><ion-card-header class="ion-padding-start ion-padding-end arrange"
-              ><div class="arrange2">
-                <ion-avatar class="ment"
-                  ><ion-icon name="person-circle"></ion-icon></ion-avatar
-                ><ion-card-title><p>person samson</p></ion-card-title>
-              </div>
-              <ion-icon name="close"></ion-icon> </ion-card-header
-            ><ion-card-content class="shegee ion-no-padding">
-              <div class="behave">
-                <ion-thumbnail class="mk-box">
-                  <img src="../assets/home1.jpg" alt="" />
-                </ion-thumbnail>
-                <ion-thumbnail class="mk-box">
-                  <img src="../assets/home2.jpg" alt="" />
-                </ion-thumbnail>
-              </div>
-              <div>
-                <ion-thumbnail class="mk-box2">
-                  <img src="../assets/home3.jpg" alt="" />
-                </ion-thumbnail>
-              </div>
-              <ion-button
-                ><ion-icon name="person-add"></ion-icon>Follow</ion-button
-              >
-            </ion-card-content>
-          </ion-card></ion-col
-        >
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div
+								class="profile ion-margin-start ion-margin-top ion-margin-end ion-margin-bottom"
+							>
+								<div class="fit">
+									<ion-avatar class="avatar-box"> </ion-avatar>
+									<ion-label class="ion-margin-start">Person X</ion-label>
+								</div>
+								<ion-icon class="delete" name="close"></ion-icon>
+							</div>
+							<div class="move">
+								<div class="fifty-vertical-one">
+									<div>
+										<img src="../assets/home1.jpg" alt="" />
+									</div>
+									<div class="mkbox">
+										<img src="../assets/home2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="button ion-margin-top ion-margin-bottom">
+								<ion-button shape="round">
+									<ion-icon
+										class="person ion-margin-end"
+										name="person-add"
+									></ion-icon
+									>Follow
+								</ion-button>
+							</div>
+						</ion-card>
+					</ion-col>
 
-        <ion-col size-lg="5" size-sm="7" size-xs="8"
-          ><ion-card class="ion-margin-end see"
-            ><ion-card-header class="ion-padding-start ion-padding-end arrange"
-              ><div class="arrange2">
-                <ion-avatar class="ment"
-                  ><ion-icon name="person-circle"></ion-icon></ion-avatar
-                ><ion-card-title><p>person samson</p></ion-card-title>
-              </div>
-              <ion-icon name="close"></ion-icon>
-            </ion-card-header> </ion-card
-        ></ion-col>
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div
+								class="profile ion-margin-start ion-margin-top ion-margin-end ion-margin-bottom"
+							>
+								<div class="fit">
+									<ion-avatar class="avatar-box"> </ion-avatar>
+									<ion-label class="ion-margin-start">Person X</ion-label>
+								</div>
+								<ion-icon class="delete" name="close"></ion-icon>
+							</div>
+							<div class="move">
+								<div class="fifty-vertical-one">
+									<div>
+										<img src="../assets/home1.jpg" alt="" />
+									</div>
+									<div class="mkbox">
+										<img src="../assets/home2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="button ion-margin-top ion-margin-bottom">
+								<ion-button shape="round">
+									<ion-icon
+										class="person ion-margin-end"
+										name="person-add"
+									></ion-icon
+									>Follow
+								</ion-button>
+							</div>
+						</ion-card>
+					</ion-col>
 
-        <ion-col size-lg="5" size-sm="7" size-xs="8"
-          ><ion-card class="ion-margin-end see"
-            ><ion-card-header class="ion-padding-start ion-padding-end arrange"
-              ><div class="arrange2">
-                <ion-avatar class="ment"
-                  ><ion-icon name="person-circle"></ion-icon></ion-avatar
-                ><ion-card-title><p>person samson</p></ion-card-title>
-              </div>
-              <ion-icon name="close"></ion-icon>
-            </ion-card-header> </ion-card
-        ></ion-col>
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div
+								class="profile ion-margin-start ion-margin-top ion-margin-end ion-margin-bottom"
+							>
+								<div class="fit">
+									<ion-avatar class="avatar-box"> </ion-avatar>
+									<ion-label class="ion-margin-start">Person X</ion-label>
+								</div>
+								<ion-icon class="delete" name="close"></ion-icon>
+							</div>
+							<div class="move">
+								<div class="fifty-vertical-one">
+									<div>
+										<img src="../assets/home1.jpg" alt="" />
+									</div>
+									<div class="mkbox">
+										<img src="../assets/home2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="button ion-margin-top ion-margin-bottom">
+								<ion-button shape="round">
+									<ion-icon
+										class="person ion-margin-end"
+										name="person-add"
+									></ion-icon
+									>Follow
+								</ion-button>
+							</div>
+						</ion-card>
+					</ion-col>
 
-        <ion-col size-lg="5" size-sm="7" size-xs="8"
-          ><ion-card class="ion-margin-end see"
-            ><ion-card-header class="ion-padding-start ion-padding-end arrange"
-              ><div class="arrange2">
-                <ion-avatar class="ment"
-                  ><ion-icon name="person-circle"></ion-icon></ion-avatar
-                ><ion-card-title><p>person samson</p></ion-card-title>
-              </div>
-              <ion-icon name="close"></ion-icon>
-            </ion-card-header> </ion-card
-        ></ion-col>
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div
+								class="profile ion-margin-start ion-margin-top ion-margin-end ion-margin-bottom"
+							>
+								<div class="fit">
+									<ion-avatar class="avatar-box"> </ion-avatar>
+									<ion-label class="ion-margin-start">Person X</ion-label>
+								</div>
+								<ion-icon class="delete" name="close"></ion-icon>
+							</div>
+							<div class="move">
+								<div class="fifty-vertical-one">
+									<div>
+										<img src="../assets/home1.jpg" alt="" />
+									</div>
+									<div class="mkbox">
+										<img src="../assets/home2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="button ion-margin-top ion-margin-bottom">
+								<ion-button shape="round">
+									<ion-icon
+										class="person ion-margin-end"
+										name="person-add"
+									></ion-icon
+									>Follow
+								</ion-button>
+							</div>
+						</ion-card>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</div>
 
-        <ion-col size-lg="5" size-sm="7" size-xs="8"
-          ><ion-card class="ion-margin-end see"
-            ><ion-card-header class="ion-padding-start ion-padding-end arrange"
-              ><div class="arrange2">
-                <ion-avatar class="ment"
-                  ><ion-icon name="person-circle"></ion-icon></ion-avatar
-                ><ion-card-title><p>person samson</p></ion-card-title>
-              </div>
-              <ion-icon name="close"></ion-icon>
-            </ion-card-header> </ion-card
-        ></ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card-content>
-</ion-card>
+		<!-- second gallery start -->
+		<div class="ion-margin-top">
+			<ion-card-header>
+				<div class="recom ion-margin-bottom">
+					<ion-icon name="image"></ion-icon>
+					<h3 class="ion-text-uppercase">Top 5</h3>
+					<span>Photos of the week</span>
+					<span>. Lagos</span>
+					<ion-icon name="flag"></ion-icon>
+					<ion-icon name="ellipsis-vertical"></ion-icon>
+				</div>
+			</ion-card-header>
+
+			<ion-grid
+				><ion-row class="gallery-box ion-nowrap ion-margin-bottom">
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div class="move">
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</ion-card>
+					</ion-col>
+
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div class="move">
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</ion-card>
+					</ion-col>
+
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div class="move">
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</ion-card>
+					</ion-col>
+
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div class="move">
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</ion-card>
+					</ion-col>
+
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="pic ion-margin-end ion-margin-bottom">
+							<div class="move">
+								<div class="fifty-vertical-one fifty-vertical-two">
+									<div>
+										<img src="../assets/home3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</ion-card>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</div>
+	</ion-content>
+
+	<!-- footer begins here -->
+	<ion-footer>
+		<ion-toolbar>
+			<ion-tabs>
+				<ion-tab-bar slot="bottom">
+					<ion-tab-button tab="home">
+						<ion-icon name="home"></ion-icon>
+						<ion-label>Home</ion-label>
+					</ion-tab-button>
+
+					<ion-tab-button tab="bus">
+						<ion-icon name="bus"></ion-icon>
+						<ion-label>Commute</ion-label>
+					</ion-tab-button>
+
+					<ion-tab-button tab="updates">
+						<ion-icon name="notifications"></ion-icon>
+						<ion-label>Updates</ion-label>
+					</ion-tab-button>
+				</ion-tab-bar>
+			</ion-tabs>
+		</ion-toolbar>
+	</ion-footer>
+	<!-- footer ends here -->
+</ion-app>
