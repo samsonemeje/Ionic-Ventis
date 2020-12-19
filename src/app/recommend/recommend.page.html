@@ -247,25 +247,47 @@
 		<div class="ion-margin-top">
 			<ion-card-header>
 				<div class="recom ion-margin-bottom">
-					<ion-icon name="image"></ion-icon>
-					<h3 class="ion-text-uppercase">Top 5</h3>
-					<span>Photos of the week</span>
-					<span>. Lagos</span>
-					<ion-icon name="flag"></ion-icon>
-					<ion-icon name="ellipsis-vertical"></ion-icon>
+					<div class="recom-group">
+						<ion-icon name="image"></ion-icon>
+						<span class="ion-text-uppercase ion-margin-start ion-margin-end"
+							>Top 5</span
+						>
+						<span class="ion-margin-end">Photos of the week</span>
+						<div class="circle"></div>
+						<span class="ion-margin-start">Lagos</span>
+					</div>
+					<div class="flex">
+						<ion-icon name="flag"></ion-icon>
+						<ion-icon
+							class="ion-margin-start"
+							name="ellipsis-vertical"
+						></ion-icon>
+					</div>
 				</div>
 			</ion-card-header>
 
 			<ion-grid
 				><ion-row class="gallery-box ion-nowrap ion-margin-bottom">
 					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
-						<ion-card class="pic ion-margin-end ion-margin-bottom">
-							<div class="move">
-								<div class="fifty-vertical-one fifty-vertical-two">
-									<div>
-										<img src="../assets/home3.jpg" alt="" />
-									</div>
-								</div>
+						<ion-card class="ion-margin-end ion-margin-bottom">
+							<div class="gallery-section2">
+								<img src="../assets/home3.jpg" alt="" />
+							</div>
+						</ion-card>
+					</ion-col>
+
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="ion-margin-end ion-margin-bottom">
+							<div class="gallery-section2">
+								<img src="../assets/home1.jpg" alt="" />
+							</div>
+						</ion-card>
+					</ion-col>
+
+					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
+						<ion-card class="ion-margin-end ion-margin-bottom">
+							<div class="gallery-section2">
+								<img src="../assets/home2.jpg" alt="" />
 							</div>
 						</ion-card>
 					</ion-col>
@@ -273,47 +295,17 @@
 					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
 						<ion-card class="pic ion-margin-end ion-margin-bottom">
 							<div class="move">
-								<div class="fifty-vertical-one fifty-vertical-two">
-									<div>
-										<img src="../assets/home3.jpg" alt="" />
-									</div>
+								<div class="gallery-section2">
+									<img src="../assets/home1.jpg" alt="" />
 								</div>
 							</div>
 						</ion-card>
 					</ion-col>
 
 					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
-						<ion-card class="pic ion-margin-end ion-margin-bottom">
-							<div class="move">
-								<div class="fifty-vertical-one fifty-vertical-two">
-									<div>
-										<img src="../assets/home3.jpg" alt="" />
-									</div>
-								</div>
-							</div>
-						</ion-card>
-					</ion-col>
-
-					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
-						<ion-card class="pic ion-margin-end ion-margin-bottom">
-							<div class="move">
-								<div class="fifty-vertical-one fifty-vertical-two">
-									<div>
-										<img src="../assets/home3.jpg" alt="" />
-									</div>
-								</div>
-							</div>
-						</ion-card>
-					</ion-col>
-
-					<ion-col size-lg="4" size-md="5" size-sm="8" size-xs="10">
-						<ion-card class="pic ion-margin-end ion-margin-bottom">
-							<div class="move">
-								<div class="fifty-vertical-one fifty-vertical-two">
-									<div>
-										<img src="../assets/home3.jpg" alt="" />
-									</div>
-								</div>
+						<ion-card class="ion-margin-end ion-margin-bottom">
+							<div class="gallery-section2">
+								<img src="../assets/home3.jpg" alt="" />
 							</div>
 						</ion-card>
 					</ion-col>
@@ -327,8 +319,8 @@
 		<ion-toolbar>
 			<ion-tabs>
 				<ion-tab-bar slot="bottom">
-					<ion-tab-button tab="home">
-						<ion-icon name="home"></ion-icon>
+					<ion-tab-button routerLink="/login" tab="home">
+						<ion-icon class="footer" name="home"></ion-icon>
 						<ion-label>Home</ion-label>
 					</ion-tab-button>
 

@@ -6,7 +6,6 @@ $elipsis: #acacac;
 $recom: #909090;
 
 .input-container {
-	// border: 1px solid $link-color;
 	display: flex;
 	align-items: center;
 	-moz-box-shadow: 0px 3px 8px $link-color;
@@ -41,7 +40,6 @@ hr {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 12px solid purple;
 	& h3 {
 		font-weight: 700;
 	}
@@ -61,19 +59,21 @@ hr {
 }
 
 .gallery-box {
-	border: 12px solid red;
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: scroll;
-}
 
-.pic {
-	// height: 370px;
-	-moz-box-shadow: 0px 3px 8px $link-color;
-	-webkit-box-shadow: 0px 3px 8px $link-color;
-	box-shadow: 0px 3px 8px $link-color;
-	border-top: 1px solid $elipsis;
-	border-left: 1px solid $elipsis;
+	.pic {
+		-moz-box-shadow: 0px 3px 8px $link-color;
+		-webkit-box-shadow: 0px 3px 8px $link-color;
+		box-shadow: 0px 3px 8px $link-color;
+		border-top: 1px solid $elipsis;
+		border-left: 1px solid $elipsis;
+
+		.move {
+			height: 275px;
+		}
+	}
 }
 
 .profile {
@@ -98,10 +98,6 @@ hr {
 	& .delete {
 		font-size: 1.7em;
 	}
-}
-
-.move {
-	height: 290px;
 }
 
 .fifty-vertical-one {
@@ -130,5 +126,46 @@ hr {
 	& .person {
 		color: $white;
 		font-size: 1em;
+	}
+}
+
+.gallery-section2 {
+	height: 275px;
+	width: 100%;
+
+	& img {
+		object-fit: cover;
+		height: 275px;
+		min-width: 100%;
+	}
+}
+
+.recom-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.1em;
+
+	& ion-icon {
+		color: $primary;
+	}
+
+	.circle {
+		border-radius: 50%;
+		width: 4px;
+		height: 4px;
+		background-color: $grey-shade;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.footer {
+		// height: 100px;
+		font-size: 3em;
+		border: 3px solid red;
 	}
 }
