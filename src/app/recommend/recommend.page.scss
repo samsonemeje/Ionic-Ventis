@@ -36,16 +36,16 @@ hr {
 
 .recom {
 	color: $primary;
-	font-size: 0.7em;
+	font-size: 1.1em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	& h3 {
+	& p {
 		font-weight: 700;
 	}
 	ion-icon {
-		width: 25px;
-		height: 25px;
+		width: 1.5em;
+		height: 1.5em;
 		color: $elipsis;
 	}
 	& :hover {
@@ -54,7 +54,7 @@ hr {
 }
 
 .ventis {
-	font-size: 1.7em;
+	font-size: 1.4em;
 	color: $recom;
 }
 
@@ -88,8 +88,6 @@ hr {
 	}
 
 	& .avatar-box {
-		// width: 50px;
-		// height: 50px;
 		background: url('/assets/person-circle.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -144,10 +142,12 @@ hr {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 1.1em;
+	font-size: 0.9em;
 
 	& ion-icon {
 		color: $primary;
+		width: 1.5em;
+		height: 1.5em;
 	}
 
 	.circle {
@@ -161,11 +161,11 @@ hr {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-	}
 
-	.footer {
-		// height: 100px;
-		font-size: 3em;
-		border: 3px solid red;
+		& ion-icon {
+			color: $elipsis;
+			width: 1.5em;
+			height: 1.5em;
+		}
 	}
 }
